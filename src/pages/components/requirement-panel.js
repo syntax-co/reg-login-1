@@ -135,43 +135,48 @@ const RequirementPanel = ({reqs}) => {
                         />
                     </motion.div>
 
-                    <div className="w-[90%] h-[60%] mt-10 mr-0
-                    flex flex-col items-center"
-                    >
 
-                        <ReqTile 
-                        label={'Capital Letters'}
-                        status={reqs[0]}
-                        />
+                    {
+                        reqs && 
+                        <div className="w-[90%] h-[60%] mt-10 mr-0
+                        flex flex-col items-center"
+                        >
 
-                        <ReqTile 
-                        label={'Lowercase Characters'}
-                        status={reqs[1]}
-                        />
+                            <ReqTile 
+                            label={'Capital Letters'}
+                            status={reqs[0]}
+                            />
 
-                        <ReqTile 
-                        label={'Numbers'}
-                        status={reqs[2]}
-                        />
+                            <ReqTile 
+                            label={'Lowercase Characters'}
+                            status={reqs[1]}
+                            />
 
-                        <ReqTile 
-                        label={'Special Characters'}
-                        status={reqs[3]}
-                        />
+                            <ReqTile 
+                            label={'Numbers'}
+                            status={reqs[2]}
+                            />
 
-                        <ReqTile 
-                        label={'12 or more characters'}
-                        status={reqs[4]}
-                        />
+                            <ReqTile 
+                            label={'Special Characters'}
+                            status={reqs[3]}
+                            />
 
-                        <ReqTile 
-                        label={'Passwords Match'}
-                        status={reqs[5]}
-                        />
+                            <ReqTile 
+                            label={'12 or more characters'}
+                            status={reqs[4]}
+                            />
+
+                            <ReqTile 
+                            label={'Passwords Match'}
+                            status={reqs[5]}
+                            />
 
 
 
-                    </div>
+                        </div>
+                    }
+                    
 
                 </motion.div>
 
