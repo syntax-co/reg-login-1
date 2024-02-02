@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.form-selector-main-browser {
+    @apply
+    w-[50px] h-full left-[-50px] absolute 
+    text-white
+
+    sm:hidden
+
+    md:block
+
+    lg:block
+
+    xl:block
+
+    ;
+}
